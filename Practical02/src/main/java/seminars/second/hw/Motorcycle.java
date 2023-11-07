@@ -6,7 +6,6 @@ public class Motorcycle extends Vehicle {
     private int yearRelease;
     private int numWheels;
     private int speed;
-
     public Motorcycle (String company, String model, int year) {
         this.company = company;
         this.model = model;

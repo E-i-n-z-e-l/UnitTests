@@ -6,8 +6,6 @@ public abstract class Vehicle {
     private int yearRelease;
     private int numWheels;
     private int speed;
-
     public abstract void testDrive();
-
     public abstract void park();
 }
