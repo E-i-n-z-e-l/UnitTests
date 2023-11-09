@@ -12,6 +12,7 @@
         <module>Practical02</module>
         <module>Practical01</module>
         <module>Seminar02</module>
+        <module>Seminar03</module>
     </modules>
 
     <dependencies>
