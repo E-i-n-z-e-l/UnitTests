@@ -1,0 +1,11 @@
+1. В тестовом классе мы используем аннотацию @Mock для создания мок-объекта BookRepository, и аннотацию @InjectMocks
+для создания экземпляра BookService и автоматической вставки созданного мок-объекта BookRepository в BookService.
+
+2. В методе init() мы инициализируем моки перед каждым тестом, используя MockitoAnnotations.openMocks(this).
+
+3. В тестах testFindBookById и testFindAllBooks мы задаем ожидаемое поведение для мок-объекта BookRepository с помощью
+Mockito.when(...).thenReturn(...), а затем вызываем методы findBookById и findAllBooks объекта bookService, чтобы
+проверить их корректность.
+
+Таким образом, с помощью Mockito мы можем создать мок-объект BookRepository и описать его поведение, чтобы проверить
+правильность работы методов класса BookService.
