@@ -3,8 +3,7 @@ package TwoArrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class Methods implements IMethods{
-
+public class Methods implements IMethods {
     public void ReceivingArray(List<Integer> list) {
         Scanner scanner = new Scanner(System.in);
         while (list.size() < 5) {
@@ -28,14 +27,10 @@ public class Methods implements IMethods{
 
         if (sumList1 > sumList2) {
             System.out.println("Первый список имеет большее среднее значение");
-        }
-        else if (sumList1 < sumList2) {
+        } else if (sumList1 < sumList2) {
             System.out.println("Второй список имеет большее среднее значение");
-        }
-        else {
+        } else {
             System.out.println("Средние значения равны");
         }
-
     }
-
 }
