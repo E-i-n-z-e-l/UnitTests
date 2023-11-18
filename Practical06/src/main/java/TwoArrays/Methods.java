@@ -7,13 +7,20 @@ public class Methods implements IMethods {
     public void ReceivingArray(List<Integer> list) {
         Scanner scanner = new Scanner(System.in);
         while (list.size() < 5) {
-            System.out.println("Введите элемент списка: ");
+            System.out.println("Введите целочисленный элемент списка: ");
+            while (!scanner.hasNextInt()) {
+                System.out.println("Ошибка! Введите целочисленное значение: ");
+                scanner.next(); // очистить буфер ввода
+            }
             int element = scanner.nextInt();
             list.add(element);
         }
     }
 
     public int ListSum(List<Integer> list) {
+        if (list.isEmpty()) {
+            return 0; // Возвращаем 0 для пустого списка
+        }
         int sumArray = 0;
         for (int i = 0; i < list.size(); i++) {
             sumArray = sumArray + list.get(i);
