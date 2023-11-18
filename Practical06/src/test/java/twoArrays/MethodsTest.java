@@ -1,24 +1,18 @@
-package TwoArrays;
+package twoArrays;
 
 import org.junit.contrib.java.lang.system.SystemOutRule;
 import org.junit.jupiter.api.Test;
 import org.junit.Rule;
 
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.*;
 
 
 import static com.github.stefanbirkner.systemlambda.SystemLambda.withTextFromSystemIn;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.mockito.Mockito.when;
-
-import org.mockito.MockedStatic;
-import org.mockito.Mockito;
 
 class MethodsTest {
     @Rule
@@ -32,7 +26,7 @@ class MethodsTest {
 
         // Подменяем стандартный ввод внутри кода теста
         withTextFromSystemIn("1", "2", "3", "4", "5").execute(() -> {
-            methods.ReceivingArray(testList);
+            methods.receivingArray(testList);
             assertEquals(5, testList.size());
         });
     }

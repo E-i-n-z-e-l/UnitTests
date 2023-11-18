@@ -1,10 +1,10 @@
-package TwoArrays;
+package twoArrays;
 
 import java.util.List;
 import java.util.Scanner;
 
 public class Methods implements IMethods {
-    public void ReceivingArray(List<Integer> list) {
+    public void receivingArray(List<Integer> list) {
         Scanner scanner = new Scanner(System.in);
         while (list.size() < 5) {
             System.out.println("Введите целочисленный элемент списка: ");

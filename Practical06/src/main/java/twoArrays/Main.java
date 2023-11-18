@@ -1,4 +1,4 @@
-package TwoArrays;
+package twoArrays;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,9 +13,9 @@ public class Main extends Methods {
         Methods methods = new Methods();
 
         System.out.println("Заполните первый список из пяти элементов ");
-        methods.ReceivingArray(list1);
+        methods.receivingArray(list1);
         System.out.println("Заполните второй список из пяти элементов ");
-        methods.ReceivingArray(list2);
+        methods.receivingArray(list2);
 
         System.out.println("Список №1: " + list1);
         System.out.println("Список №2: " + list2);

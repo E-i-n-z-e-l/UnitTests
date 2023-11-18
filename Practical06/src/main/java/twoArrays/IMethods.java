@@ -1,9 +1,9 @@
-package TwoArrays;
+package twoArrays;
 
 import java.util.List;
 
 public interface IMethods {
-    public void ReceivingArray(List<Integer> list);
+    public void receivingArray(List<Integer> list);
 
     public int ListSum(List<Integer> list);
 
