@@ -6,6 +6,7 @@
 
 #### **Класс Methods покрыт на 100%. Класс Main и IMethods не покрывались, так как
 #### не нуждается в этом.**
+#### **Полный отчет есть в репозитории htmlReport.**
 
 ### **2. Отчет Checkstyle.**
 ![Отчет Checkstyle](https://i.ibb.co/fptf8TV/Checkstyle.png)
